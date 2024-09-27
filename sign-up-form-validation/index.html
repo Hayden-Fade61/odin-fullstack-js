@@ -7,36 +7,54 @@
   <title>This is a Form</title>
 </head>
 <body>
-  <div id="img-container">
-    <img id="odin-logo" src="./static/odin-lined.png">
+  <div id="bg-container">
+    <div id="odin-banner">
+      <img id="odin-logo" src="./static/img/odin-lined.png">
+      <p id="odin-banner-text">ODIN</p>
+    </div>
     <p id="bg-credit">Image by <a href="#">Haile West</a> on <a href="#">Unsplash</a></p>
   </div>
   <div id="sign-up-container">
     <p id="sign-up-hero">
-      This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-      Sign up <em>now</em> to get started.
+      This is not a real online service! You know you need something like 
+      this in your life to help you realize your deepest dreams.
+      <br>Sign up <em>now</em> to get started.<br>
 
-      You <em>know</em> you want to.
+      <br>You <em>know</em> you want to.
     </p>
     <form id="sign-up-form">
-      <h2>Let's do this!</h2>
-      <fieldset id="sign-up">
-        <label for="first-name">First Name</label>
-        <input id="first-name" type="text">
-        <label for="last-name">Last Name</label>
-        <input id="last-name" type="text">
-        <label for="email">Email</label>
-        <input id="email" type="email">
-        <label for="phone">Phone Number</label>
-        <input id="phone" type="tel">
-        <label for="password">Password</label>
-        <input id="password" type="password">
-        <label for="password-confirm">Confirm Password</label>
-        <input id="password-confirm" type="password">
+      <h3>Let's do this!</h3>
+      <fieldset id="sign-up-fields">
+        <label for="first-name">
+          FIRST NAME
+          <input id="first-name" type="text" placeholder=" ex. Jane">
+        </label>
+        <label for="last-name">
+          LAST NAME
+          <input id="last-name" type="text" placeholder=" ex. Doe">
+        </label>
+        <label for="email">
+          EMAIL
+          <input id="email" type="email" placeholder=" jane.doe@example.com">
+        </label>
+        <label for="phone">
+          PHONE NUMBER
+          <input id="phone" type="tel">
+        </label>
+        <label for="password">
+          PASSWORD
+          <input id="password" type="password">
+        </label>
+        <label for="password-confirm">
+          CONFIRM PASSWORD
+          <input id="password-confirm" type="password">
+        </label>
       </fieldset>
-      <button type="submit">Create Account</button>
     </form>
-    <p>Already have an account? <a href="#">Log in</a></p>
+    <div id="submission">
+      <button id="sign-up-button" type="submit">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
   </div>
 </body>
 </html>
