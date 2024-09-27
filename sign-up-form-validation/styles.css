@@ -1,49 +1,124 @@
+/* General Styles */
 html{
-    font-family: sans-serif;
+    font-family: "Roboto", "Tahoma", sans-serif;
 }
 
 body {
     display: flex;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
-#img-container {
+h3 {
+    font-size: 1.4rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    /* border: 1px solid black; */
+}
+
+input {
+    font-size: 1.1rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 2rem;
+    margin-top: 1.5%;
+}
+
+/* Background Image styles */
+
+#bg-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url("./static/bg.jpg");
+    min-width: 40%;
+    background-image: url("./static/img/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-p {
-    overflow: wrap;
-}
-
-#img-container p {
+#bg-container p {
     font-size: 0.7rem;
     margin-top: auto;
     color: white;
-}
-
-#bg-credit {
     justify-content: center;
     align-self: center;
 }
 
-#img-container a:link {
+#bg-container a:link {
     color: white;
 }
 
-#img-container a:visited {
+#bg-container a:visited {
     color: lightblue;
 }
+
+#odin-banner{
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+#odin-logo {
+    margin-top: 15%;
+}
+
+/* Sign Up Form Section */
 
 #sign-up-container {
     display: flex;
     flex-direction: column;
-    padding: 100px 40px;
+    padding: 4% 0;
+    background-color: #f9fafb;
+}
+
+#sign-up-container > * {
+    padding: 0 40px;
+}
+
+#sign-up-hero {
+    font-size: 1.4rem;
+    font-weight: 600;
+    inline-size: 75%;
+    margin-bottom: 4%;
+}
+
+#sign-up-form {
+    background-color: white;
+    border: none;
+    box-shadow: 2px 3px 5px 0 rgb(0 0 0 / 10%);
+}
+
+#sign-up-fields {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+    border: none;
+    /* border: 1px solid black; */
+}
+
+#sign-up-button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #596d48;
+    width: 25%;
+    height: 50%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px 1px rgb(0 0 0 / 10%);
+    margin-top: 2%;
 }
 
 
