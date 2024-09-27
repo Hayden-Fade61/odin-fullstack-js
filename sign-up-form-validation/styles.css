@@ -1,5 +1,51 @@
+html{
+    font-family: sans-serif;
+}
+
 body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     background-image: url("./static/bg.jpg");
-    background-size: 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
 }
+
+p {
+    overflow: wrap;
+}
+
+#img-container p {
+    font-size: 0.7rem;
+    margin-top: auto;
+    color: white;
+}
+
+#bg-credit {
+    justify-content: center;
+    align-self: center;
+}
+
+#img-container a:link {
+    color: white;
+}
+
+#img-container a:visited {
+    color: lightblue;
+}
+
+#sign-up-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px;
+}
+
+
+
+
