@@ -7,6 +7,36 @@
   <title>This is a Form</title>
 </head>
 <body>
-  
+  <div id="img-container">
+    <img id="odin-logo" src="./static/odin-lined.png">
+    <p id="bg-credit">Image by <a href="#">Haile West</a> on <a href="#">Unsplash</a></p>
+  </div>
+  <div id="sign-up-container">
+    <p id="sign-up-hero">
+      This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+      Sign up <em>now</em> to get started.
+
+      You <em>know</em> you want to.
+    </p>
+    <form id="sign-up-form">
+      <h2>Let's do this!</h2>
+      <fieldset id="sign-up">
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text">
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text">
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel">
+        <label for="password">Password</label>
+        <input id="password" type="password">
+        <label for="password-confirm">Confirm Password</label>
+        <input id="password-confirm" type="password">
+      </fieldset>
+      <button type="submit">Create Account</button>
+    </form>
+    <p>Already have an account? <a href="#">Log in</a></p>
+  </div>
 </body>
 </html>
