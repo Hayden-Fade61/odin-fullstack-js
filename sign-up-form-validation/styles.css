@@ -85,10 +85,6 @@ input:focus {
     background-color: #0008;
 }
 
-#odin-banner-text {
-    font-family: url("./static/font/Norse-Bold.otf"), sans-serif;
-}
-
 
 #odin-logo {
     margin-top: 15%;
