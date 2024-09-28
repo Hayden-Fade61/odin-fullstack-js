@@ -27,21 +27,36 @@
       <fieldset id="sign-up-fields">
         <label for="first-name">
           FIRST NAME
-          <input id="first-name" type="text" placeholder=" ex. Jane">
+          <input 
+            id="first-name"
+            type="text" 
+            placeholder=" ex. Jane" 
+            pattern="\w{3,16}"
+            required
+          >
         </label>
         <label for="last-name">
           LAST NAME
-          <input id="last-name" type="text" placeholder=" ex. Doe">
+          <input 
+            id="last-name" 
+            type="text" 
+            placeholder=" ex. Doe"
+            pattern="\w{3,16}"
+          >
         </label>
         <label for="email">
           EMAIL
-          <input id="email" type="email" placeholder=" jane.doe@example.com">
+          <input 
+            id="email" 
+            type="email" 
+            placeholder=" jane.doe@example.com"
+            required >
         </label>
         <label for="phone">
           PHONE NUMBER
           <input id="phone" type="tel">
         </label>
-        <label for="password">
+        <label for="password" pattern="\d+">
           PASSWORD
           <input id="password" type="password">
         </label>
