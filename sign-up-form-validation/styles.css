@@ -85,6 +85,9 @@ input:focus {
     background-color: #0008;
 }
 
+#odin-banner-text{
+    color: rosybrown;
+}
 
 #odin-logo {
     margin-top: 15%;
