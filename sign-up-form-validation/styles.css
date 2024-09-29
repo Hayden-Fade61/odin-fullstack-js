@@ -80,17 +80,22 @@ input:focus {
 
 #odin-banner{
     display: flex;
-    justify-content: space-around;
-    font-size: large;
+    align-items: center;
     background-color: #0008;
+    margin-top: 35%;
+    height: 20%;
 }
 
 #odin-banner-text{
-    color: rosybrown;
+    color: white;
+    font-family: Rajdhani;
+    font-size: 5rem;
+    margin-right: auto;
 }
 
 #odin-logo {
-    margin-top: 15%;
+    height: 60%;
+    margin-left: auto;
 }
 
 /* Sign Up Form Section */
@@ -126,7 +131,6 @@ input:focus {
     flex-wrap: wrap;
     padding-left: 0;
     border: none;
-    /* border: 1px solid black; */
 }
 
 #sign-up-button {
