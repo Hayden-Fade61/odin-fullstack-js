@@ -47,7 +47,7 @@ input:invalid {
 
 input:focus {
     border: 1px solid blue;
-    outline: none;
+    outline: none; /* In the future, overwrite instead of setting none */
 }
 
 /* Background Image styles */
@@ -126,7 +126,7 @@ input:focus {
 
 #sign-up-fields {
     display: flex;
-    width: 65%;
+    width: 70%;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
