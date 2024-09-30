@@ -1,6 +1,6 @@
 .container {
     display: inline-grid; /* Equivalent to inline-block */
-    grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+    grid-template: repeat(5,40px) / 40px 40px 40px 40px 40px; /* 5x5 grid */
     background-color: lightblue;
 
     /* Defining the grid areas using selectors can be tedious, especially if 
@@ -11,12 +11,12 @@
      * the grid-area property to assign an element to a template area e.g.
      * #kitchen {grid-area: kitchen;} would be the same as
      * #kitchen {grid-area: 3 / 5 / 4 / 6;} */
-    grid-template-areas:
+    /* grid-template-areas:
     "living-room living-room living-room living-room living-room"
     "living-room living-room living-room living-room living-room"
     "bedroom bedroom bathroom kitchen kitchen"
     "bedroom bedroom bathroom kitchen kitchen"
-    "closet closet . . ." ;
+    "closet closet . . ." ; */
 }
 
 .room {
@@ -58,5 +58,5 @@
 }
 
 #kitchen {
-    grid-area: 3 / 6 / 4 / 6; /* Same as grid-row: 3 / 6; grid-column: 4 / 6; */
+    grid-area: 3 / 4 / 6 / 6; /* Same as grid-row: 3 / 6; grid-column: 4 / 6; */
 }
