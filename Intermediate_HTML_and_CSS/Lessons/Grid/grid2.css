@@ -1,0 +1,62 @@
+.container {
+    display: inline-grid; /* Equivalent to inline-block */
+    grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+    background-color: lightblue;
+
+    /* Defining the grid areas using selectors can be tedious, especially if 
+     * we want to change a complex layout. We can use a list of strings to 
+     * assign each cell to a template area on the grid which we can then slot 
+     * elements into. Each string is a row and each word is a column.
+     * '.' refers to an unasigned/empty cell. We can then just use
+     * the grid-area property to assign an element to a template area e.g.
+     * #kitchen {grid-area: kitchen;} would be the same as
+     * #kitchen {grid-area: 3 / 5 / 4 / 6;} */
+    grid-template-areas:
+    "living-room living-room living-room living-room living-room"
+    "living-room living-room living-room living-room living-room"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "closet closet . . ." ;
+}
+
+.room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+
+#living-room {
+    /* These properties allow a grid item to take up the area defined by the 
+     * start and end grid LINES(!!Muy IMPORTANTE!!!) 
+     * If only a start/end is declared, then the item will take up 1 cell
+     * relative to the context of what was declared e.g. grid-row-end: 2;
+     * would mean the same as grid-row-start: 1; grid-row-end: 2; */
+    
+    /* take up all columns from line 1 to line 6 (5 cols) */
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+    /* take up all rows from line 1 to line 3 (2 rows) */
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#bedroom {
+    grid-row: 3 / 5;
+    grid-column: 1 / 3;
+}
+
+#bathroom {
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column: 3 / 4;
+}
+
+#closet {
+    grid-row: 5 / 6; /* shorthand for grid-row-start: 4; grid-row-end: 6; */
+    grid-column: 1 / 3;
+}
+
+#kitchen {
+    grid-area: 3 / 6 / 4 / 6; /* Same as grid-row: 3 / 6; grid-column: 4 / 6; */
+}
