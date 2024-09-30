@@ -1,0 +1,29 @@
+.container {
+    /* Declare grid container, only direct children are grid items */
+    display: grid; 
+
+    /* We can define a grid template consisting of custom sized rows and cols */
+    /* Template shorthand: rows / columns */
+    grid-template: 50px 50px / 50px 50px;
+
+    /* Grid automatically generates rows/columns for items 
+     * which overflow template. This is called an implicit grid. */
+    
+    /* grid-auto-x creates a template for implicit grid rows/columns*/
+    grid-auto-rows: 50px 100px;
+
+    /* grid-auto-flow tells grid how to add new items to the implicit grid. 
+     * Row/Column add a new row/column and fill it up based on template 
+     * Dense attempts to fit small enough grid items into 
+     * spaces left earlier in the grid, and can be used alongside row/column 
+     * e.g. grid-auto-flow: column dense; is valid */
+    grid-auto-flow: row;
+
+    /* Grid column/row spacing can be controlled with the gap shorthand e.g.
+     * 10px gap for both rows/colums = gap: 10px;
+     * 10px gap for only columns = gap: 0 10px;
+     * 10px gap for only rows = gap: 10px 0;
+     * 10px gap for rows and 30px gap for columns = gap: 10px 30px; 
+     * row-gap and column-gap can be used to set these individually */
+    gap: 10px 30px;
+}
