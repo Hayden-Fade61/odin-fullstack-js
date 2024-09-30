@@ -9,14 +9,15 @@
      * elements into. Each string is a row and each word is a column.
      * '.' refers to an unasigned/empty cell. We can then just use
      * the grid-area property to assign an element to a template area e.g.
+     * the template below creates a kitchen area which allows:
      * #kitchen {grid-area: kitchen;} would be the same as
      * #kitchen {grid-area: 3 / 5 / 4 / 6;} */
-    /* grid-template-areas:
+    grid-template-areas:
     "living-room living-room living-room living-room living-room"
     "living-room living-room living-room living-room living-room"
     "bedroom bedroom bathroom kitchen kitchen"
     "bedroom bedroom bathroom kitchen kitchen"
-    "closet closet . . ." ; */
+    "closet closet . . ." ;
 }
 
 .room {
